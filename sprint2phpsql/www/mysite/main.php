@@ -2,7 +2,14 @@
 	$db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
 ?>
 <html>
-	
+	<head>
+		<style>
+			img{
+				heigth: 344px;
+				width: 260px;
+			}
+		</style>
+	</head>
 	<body>
 		<h1>Conexión establecida</h1>
 		<?php
@@ -15,7 +22,8 @@
 			echo '<br>';
 			echo $row[1];
 			echo '<br>';
-			echo '<img src='.$row[2].'>';
+			echo '<img src="'.$row[2];
+			echo '">';
 			echo '<br>';
 			echo $row[3];
 			echo '<br>';
