@@ -22,8 +22,9 @@
 			echo '<br>';
 			echo $row[1];
 			echo '<br>';
-			echo '<img src="'.$row[2];
-			echo '">';
+			echo '<a title="imagen" href="/detail.php?libro_id='.$row[0];
+			echo '"><img src="'.$row[2];
+			echo '"></a>';
 			echo '<br>';
 			echo $row[3];
 			echo '<br>';

@@ -29,8 +29,9 @@
 			<?php
 				$query2 = 'SELECT * FROM tComentarios WHERE libro_id='.$libro_id;
 				$result2 = mysqli_query($db, $query2) or die('Query error 2');
+				
 				while ($row = mysqli_fetch_array($result2)) {
-					echo '<li>'.$row['1'].' ('.$row['fecha'].')</li>';
+					echo '<li>'.$row['1'].' ('.$row['fecha'].') '.$row['usuario_id'].'</li>';
 				}
 				mysqli_close($db);
 			?>

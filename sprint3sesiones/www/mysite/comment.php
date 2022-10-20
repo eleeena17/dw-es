@@ -4,12 +4,17 @@
 <html>
 	<body>
 		<?php
+			session_start();
+			$user_id_a_insertar = 'NULL';
+			if (!empty($_SESSION['user_id'])) {
+				$user_id_a_insertar = $_SESSION['user_id'];
+			}
 			$libro_id = $_POST['libro_id'];
 			$comentario = $_POST['new_comment'];
 			$fecha = date('Y-m-d');
 				
-			$query = "INSERT INTO tComentarios (comentario, usuario_id, libro_id, fecha) VALUES ('".$comentario."',NULL, ".$libro_id.", '".$fecha."');";
-			echo $query;
+			$query = "INSERT INTO tComentarios (comentario, libro_id, usuario_id, fecha) VALUES ('".$comentario."', ".$libro_id.", ".$user_id_a_insertar.", '".$fecha."')";
+			
 			mysqli_query($db, $query) or die ('Error');
 
 			echo "<p> Nuevo comentario ";
