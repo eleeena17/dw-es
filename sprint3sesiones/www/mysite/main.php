@@ -13,6 +13,7 @@
 	<body>
 		<h1>Conexión establecida</h1>
 		<?php
+		echo '<a title="Logout" href="/logout.php">Logout</a><br>';
 		//Lanzar una query
 		$query = 'SELECT * FROM tLibros';
 		$result = mysqli_query($db, $query) or die('Query error');
