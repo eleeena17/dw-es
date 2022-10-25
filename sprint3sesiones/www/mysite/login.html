@@ -1,24 +1,26 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		document.addEventListener("DOMContentLoaded", function() {
-		  document.getElementById("formulario").addEventListener('submit', validarFormulario); 
-		});
+			<script>
+				document.addEventListener("DOMContentLoaded", function() {
+				  document.getElementById("formulario").addEventListener('submit', validarFormulario); 
+				});
 
-		function validarFormulario(evento) {
-		  evento.preventDefault();
-		  var usuario = document.getElementById('usuario').value;
-		  if(usuario.length == 0) {
-		    alert('No has escrito nada en el usuario');
-		    return;
-		  }
-		  var clave = document.getElementById('contraseña').value;
-		  if (contraseña.length == 0) {
-		    alert('No has escrito nada en la contraseña');
-		    return;
-		  }
-		  this.submit();
-		}
+				function validarFormulario(evento) {
+				  evento.preventDefault();
+				  var email = document.getElementById('email').value;
+				  if(email.length == 0) {
+				    alert('No has escrito nada en el email');
+				    return;
+				  }
+				  var contraseña = document.getElementById('contraseña').value;
+				  if (contraseña.length == 0) {
+				    alert('No has escrito nada en la contraseña');
+				    return;
+				  }
+				  this.submit();
+				}
+			</script>
 	</head>
 	<body>
 		<h1>Login</h1>
