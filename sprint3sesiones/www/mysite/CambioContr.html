@@ -1,0 +1,14 @@
+<?php
+	$db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
+?>
+<html>
+	<body>
+		<h1>Cambiar contraseña: </h1>
+		<form id="formularioContr" action="/CambioContr.php" method="post">
+			<input id="contrAntig" name="ContrAntig" type="password" placeholder="Contraseña Antigüa">
+			<input id="contrNuev" name="ContrNuev" type="password" placeholder="Contraseña Nueva">
+			<input id="contrNuevConf" name="ContrNuevConf" type="password" placeholder="Confirmar Contraseña Nueva">
+			<input id="Confirmar" name="ConfirmContr" type="submit" value="Confirmar Contraseña">
+		</form>
+	</body>
+</html>
