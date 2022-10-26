@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		<?php
-			echo '<a title="Logout" href="/logout.php">Logout</a>';
+			echo '<a title="Main" href="/main.php">Volver a la página principal</a>';
 			if (!isset($_GET['libro_id'])) {
 				die('No se ha especificado un libro');
 			}
@@ -36,7 +36,6 @@
 					echo '<li>'.$row['1']." (".$row['fecha']." )" .$row2['nombre'].'</li>';
 				}
 				mysqli_close($db);
-
 			?>
 		</ul>
 		<p>Deja un nuevo comentario: </p>
@@ -45,5 +44,6 @@
 			<input type="hidden" name="libro_id" value="<?php echo $libro_id; ?>">
 			<input type="submit" value="Comentar">
 		</form>
+		<a title="Logout" href="/logout.php">Logout</a>		
 	</body>
 </html>

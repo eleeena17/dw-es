@@ -72,7 +72,7 @@
 		</style>
 	</head>
 	<body>
-		<a title="Logout" href="/logout.php">Logout</a>;
+		<a href="/CambioContr.html" > Cambiar Contraseña</a>
 		<h1 class="transicion">Libros</h1>
 		<table class="tabla">
 			<tr>
@@ -113,7 +113,7 @@
 			?>
 			
 		</table>
-		
+		<a title="Logout" href="/logout.php">Logout</a>;	
 	</body>
 </html>
 
