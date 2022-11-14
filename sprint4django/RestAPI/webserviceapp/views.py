@@ -28,6 +28,7 @@ def devolver_libro_por_id(request, id_solicitado):
 		diccionario = {}
 		diccionario['id'] = fila_comentario_sql.id
 		diccionario['comentario'] = fila_comentario_sql.comentario
+		diccionario['fecha'] = fila_comentario_sql.fecha
 		lista_comentarios.append(diccionario)
 	resultado = {
 		'id' : libro.id,
