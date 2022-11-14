@@ -1,5 +1,5 @@
 <?php
-	$db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
+	$db = mysqli_connect('l72.16.0.2', 'root', '1234', 'mysitedb') or die('Fail');
 ?>
 <html>
 	<head>
